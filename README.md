@@ -1,5 +1,5 @@
 
-# ClassHelper
+# eclass-admin-tool
 
 三个助手管理员工具
 
@@ -8,7 +8,7 @@
 | 序号 | 文件名 | 用处 |
 | --- | --- | --- |
 | 1 | StudentsQRCodetoPDF.py | 将学生二维码批量保存为PDF |
-| 2 | example2.png | 示例图片2 |
+| 2 | 不知道还有没有 | 不知道还有没有 |
 
 ## 用法
 
