@@ -1,7 +1,7 @@
 
 # eclass-admin-tool
 
-三个助手管理员工具
+搬砖用到的小工具
 
 
 
@@ -10,6 +10,7 @@
 | 1 | StudentsQRCodetoPDF.py | 将学生二维码批量保存为PDF |
 | 2 | SeewoYunpin.js | 批量选中希沃云屏栏目媒体 |
 | 3 | 不知道还有没有 | 不知道还有没有 |
+| 4 | 不知道还有没有 | 不知道还有没有 |
 
 ## 用法
 
@@ -25,5 +26,20 @@
 2. 将字体文件 `simkai.ttf` 保存在 `Python安装路径\Lib\site-packages\reportlab\fonts`
 
 3. 将图片存在一个文件夹内，文件名可以是 `31.jpeg`、`32.jpeg`、`33.jpeg` ......
+
+
+
+### SeewoYunpin.js
+
+在[希沃云屏](https://easisee.seewo.com/ping)的节目内容来源的选择框中全选
+
+#### 使用说明
+
+1. 复制文件中的内容
+
+2. 新建书签，把文件里的内容黏贴进去
+
+3. 点一下省半小时
+
 
 
