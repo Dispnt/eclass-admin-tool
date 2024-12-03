@@ -7,10 +7,11 @@
 
 | 序号 | 文件名 | 用处 |
 | --- | --- | --- |
-| 1 | StudentsQRCodetoPDF.py | 将学生二维码批量保存为PDF |
+| 1 | StudentsQRCodetoPDF.py | 三个助手：将学生登录二维码批量保存为PDF |
 | 2 | SeewoYunpin.js | 批量选中希沃云屏栏目媒体 |
 | 3 | jspx.js | 教师培训 |
-| 4 | 不知道还有没有 | 不知道还有没有 |
+| 4 | setSubjectLeader.js | 三个助手：把所有教师变成学科组长 |
+| 5 | 不知道还有没有 | 不知道还有没有 |
 
 ## 用法
 
@@ -55,7 +56,7 @@
 
 ### setSubjectLeader.js
 
-在三个助手平台的[学科教师管理](https://dolearning.net/school/subjects)里把所有人设为学科组长，这样他们可以直接上传\修改校本资源。
+在三个助手平台的[学科教师管理](https://dolearning.net/school/subjects)里把所有老师设为学科组长，这样他们可以直接上传\修改校本资源。
 
 **这样操作后，他们也可以删掉别人上传的校本内容**
 
