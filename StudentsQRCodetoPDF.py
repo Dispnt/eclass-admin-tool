@@ -36,22 +36,24 @@ def create_pdf(image_paths, output_pdf):
 
         # 设置页面大小
         page_width, page_height = letter
-
-        # 计算调整后的图片大小，确保高度适应页面
-        new_height = min(img_height, page_height - 20)  # 20是为了留一些边距
-
-        # 计算调整比例
-        height_ratio = new_height / img_height
-
-        # 左右边距最小为1.27厘米,学校的SB打印机打印不到旁边
         min_horizontal_margin = 1.27 * 28.35  # 将厘米转换为点
-        adjusted_width = min(page_width - 2 * min_horizontal_margin, img_width * height_ratio)
+        # 计算缩放比例，确保等比例缩放
+        width_ratio = (page_width - 2 * min_horizontal_margin) / img_width
+        height_ratio = (page_height - 20) / img_height  # 顶部和底部留白
 
-        x = (page_width - adjusted_width) / 2
+        # 选择较小的比例，确保图片不超出页面
+        scale_ratio = min(width_ratio, height_ratio)
+
+        # 缩放后的图片尺寸
+        new_width = img_width * scale_ratio
+        new_height = img_height * scale_ratio
+
+        # 居中位置
+        x = (page_width - new_width) / 2
         y = (page_height - new_height) / 2
 
         # 插入图片
-        c.drawInlineImage(img, x, y, width=adjusted_width, height=new_height)
+        c.drawInlineImage(img, x, y, width=new_width, height=new_height)
 
         # 添加文件名
         file_name = os.path.basename(image_path)
