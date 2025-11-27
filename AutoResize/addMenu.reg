@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+; --- 场景1：在文件夹内的空白处右键 ---
+[HKEY_CLASSES_ROOT\Directory\Background\shell\AutoResizeImages]
+@="统一图片比例"
+"Icon"="imageres.dll,-5304"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\AutoResizeImages\command]
+; 下面这行：请修改为你的 python.exe 路径 和 脚本路径
+; "%V" 代表当前背景所在的文件夹路径
+@="\"E:\\Anaconda\\python.exe\" \"E:\\AutoResize.py\" \"%V\""
+
+
+; --- 场景2：右键点击文件夹图标 ---
+[HKEY_CLASSES_ROOT\Directory\shell\AutoResizeImages]
+@="统一图片比例"
+"Icon"="imageres.dll,-5304"
+
+[HKEY_CLASSES_ROOT\Directory\shell\AutoResizeImages\command]
+; "%1" 代表选中的文件夹路径
+@="\"E:\\Anaconda\\python.exe\" \"?E:\\AutoResize.py\" \"%1\""

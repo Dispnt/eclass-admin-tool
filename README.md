@@ -12,7 +12,8 @@
 | 3 | jspx.js | 教师培训 |
 | 4 | setSubjectLeader.js | 三个助手：把所有教师变成学科组长 |
 | 5 | aijyCoursewareDownload.js | 浦东新区人工智能与编程平台资源下载 |
-| 6 | 不知道还有没有 | 不知道还有没有 |
+| 6 | AutoResize | 图片比例转换 |
+| 7 | 不知道还有没有 | 不知道还有没有 |
 
 ## 用法
 
@@ -57,7 +58,7 @@
 
 ### setSubjectLeader.js
 
-在三个助手平台的[学科教师管理](https://dolearning.net/school/subjects)里把所有老师设为学科组长，这样他们可以直接上传\修改校本资源。
+在三个助手平台的 [学科教师管理](https://dolearning.net/school/subjects) 里把所有老师设为学科组长，这样他们可以直接上传\修改校本资源。
 
 **这样操作后，他们也可以删掉别人上传的校本内容**
 
@@ -89,3 +90,27 @@
 4. 点击书签开始下载
 
 ***
+
+
+
+### AutoResize
+
+
+你的公众号有一堆图片要插进SVG动画，大多数是 4:3，但偏偏有几个天才老师拍出了五六张 4：2.8 的图，我的GT210用PhotoShop会原地冒烟的。
+
+分别计算横屏和竖屏，把比例不对的图压成多数比例，分辨率同正确比例的最小分辨率。
+
+
+#### 使用说明
+
+1. **装啥**
+要 [ImageMagick](https://imagemagick.org/) 和 Python
+
+2. **点啥**
+修改 `AddMenu.reg` 中的 python.exe路径 和 AutoResize.py路径（Line 9、11），双击导入注册表。
+
+3. **用啥**
+对着乱七八糟的文件夹空白处 **右键 -> 统一图片比例**。
+   
+4. **我要删了牛皮藓**
+`removeMenu.reg`可以移除右键选项。
