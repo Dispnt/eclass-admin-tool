@@ -105,13 +105,17 @@
 #### 使用说明
 
 1. **装啥**
+
 要 [ImageMagick](https://imagemagick.org/) 和 Python
 
 2. **点啥**
+
 修改 `AddMenu.reg` 中的 python.exe路径 和 AutoResize.py路径（Line 9、11），双击导入注册表。
 
 3. **用啥**
+
 对着乱七八糟的文件夹空白处 **右键 -> 统一图片比例**。
    
 4. **我要删了牛皮藓**
+
 `removeMenu.reg`可以移除右键选项。
